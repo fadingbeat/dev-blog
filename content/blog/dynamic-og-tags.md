@@ -2,6 +2,13 @@
 title: Dynamic OG Tags for React SPA on Vercel with SSR and Vite
 date: 2025-06-03 # Based on Medium article's publish date
 excerpt: A guide to implementing dynamic Open Graph (OG) tags for a React Single Page Application (SPA) hosted on Vercel, leveraging Server-Side Rendering (SSR) with Vite.
+author: Nikolina Požega
+authorBio: 'Nikolina is a passionate front-end developer and a technical writer with a focus on problem-solving and debugging. She loves sharing her knowledge with the community.'
+authorImage: '/images/nikolina.png' # Optional: Path to author's avatar image
+authorSocial:
+  linkedin: 'nikolina-pozega'
+  github: 'fadingbeat'
+  website: 'nikolina.dev'
 ---
 
 Let’s solve how to add dynamic OG Tags to your React SPA hosted on Vercel.
