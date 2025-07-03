@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poetsenOne.variable} ${raleway.variable} ${poppins.variable} ${roboto.variable}`}
     >
-      <body className="bg-brand-background-light-50 dark:bg-brand-background-dark-950 antialiased">
+      <body className="bg-brand-background-light-300 dark:bg-brand-background-dark-950 antialiased">
         {children}
       </body>
     </html>

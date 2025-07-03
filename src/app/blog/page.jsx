@@ -15,15 +15,15 @@ export default function BlogPage() {
 
   return (
     // The <main> element's background will be set by the <body> in layout.jsx.
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 ">
       {/* Page Title */}
       {/* Updated with theme-aware colors and font */}
-      <h1 className="text-4xl font-bold mb-12 text-brand-primary-900 dark:text-brand-primary-300 text-center font-display">
+      <h1 className="text-4xl font-bold mb-12  text-brand-primary-900 dark:text-brand-primary-300 text-center font-display">
         Latest Blog Posts
       </h1>
 
       {/* Grid for Blog Cards */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {allPostsData.map(({ id, date, title, excerpt }) => (
           <article
             key={id}
