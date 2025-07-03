@@ -1,8 +1,5 @@
 // src/app/blog/page.jsx
 
-// Note: For App Router, you typically don't need 'import React from 'react';'
-// as the new JSX runtime handles it. If you encounter errors later, add it back.
-
 import { getSortedPostsData } from '../../../lib/posts'; // Your JS utility file
 import Link from 'next/link';
 import { format } from 'date-fns'; // For date formatting
@@ -17,31 +14,68 @@ export default function BlogPage() {
   const allPostsData = getSortedPostsData();
 
   return (
+    // The <main> element's background will be set by the <body> in layout.jsx.
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Latest Blog Posts</h1>
+      {/* Page Title */}
+      {/* Updated with theme-aware colors and font */}
+      <h1 className="text-4xl font-bold mb-12 text-brand-primary-900 dark:text-brand-primary-300 text-center font-display">
+        Latest Blog Posts
+      </h1>
+
+      {/* Grid for Blog Cards */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {allPostsData.map(({ id, date, title, excerpt }) => (
           <article
             key={id}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            // Blog Card Styling
+            // Light Theme: light background, subtle border, darker shadow
+            // Dark Theme: darker background, subtle border, lighter shadow
+            className="p-6 rounded-lg shadow-md hover:shadow-lg transition-transform duration-200 ease-in-out
+                       bg-brand-background-light-100 dark:bg-brand-background-dark-900
+                       border border-brand-background-light-200 dark:border-brand-background-dark-700
+                       shadow-brand-background-light-300 hover:shadow-brand-background-light-400
+                       dark:shadow-brand-background-dark-950 dark:hover:shadow-brand-background-dark-800
+                       transform hover:scale-105"
           >
             <Link href={`/blog/${id}`} className="block">
-              <h2 className="text-2xl font-semibold text-blue-600 hover:text-blue-800 mb-2">
+              {/* Card Title */}
+              {/* Updated with theme-aware colors and font */}
+              <h2
+                className="text-2xl font-semibold mb-2 
+                           text-brand-primary-800 hover:text-brand-primary-900 
+                           dark:text-brand-primary-100 dark:hover:text-brand-primary-50 font-body"
+              >
                 {title}
               </h2>
             </Link>
-            {/* Using format for date (ensure date-fns is installed: npm install date-fns) */}
-            <time dateTime={date} className="text-gray-500 text-sm mb-4 block">
-              {format(new Date(date), 'LLLL d, yyyy')}
+
+            {/* Date */}
+            {/* Updated with theme-aware colors */}
+            <time
+              dateTime={date}
+              className="text-brand-primary-500 dark:text-brand-primary-200 text-sm mb-4 block"
+            >
+              {format(new Date(date), 'LLLL do, yyyy')}{' '}
+              {/* Corrected date format */}
             </time>
-            {excerpt && (
-              <p className="text-gray-700 text-base mb-4">{excerpt}</p>
+
+            {/* Excerpt */}
+            {excerpt && ( // This condition already handles the rendering
+              // REMOVED THE EXTRA CURLY BRACES {} HERE
+              <p className="text-brand-primary-700 dark:text-brand-primary-100 text-base mb-4">
+                {excerpt}
+              </p>
             )}
+
+            {/* Read More Link */}
+            {/* Updated with theme-aware colors and font */}
             <Link
               href={`/blog/${id}`}
-              className="text-blue-600 hover:underline font-medium"
+              className="text-brand-highlight-600 hover:text-brand-highlight-800 
+                         dark:text-brand-highlight-400 dark:hover:text-brand-highlight-300 
+                         font-nav text-sm inline-block mt-2"
             >
-              Read more
+              Read more →
             </Link>
           </article>
         ))}

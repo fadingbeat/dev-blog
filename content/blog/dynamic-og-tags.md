@@ -11,8 +11,6 @@ authorSocial:
   website: 'nikolina.dev'
 ---
 
-Let’s solve how to add dynamic OG Tags to your React SPA hosted on Vercel.
-
 ## The Problem
 
 When you build a React SPA, the HTML document is usually empty except for a root `div` where your React app gets mounted. This means that social media crawlers (like Facebook, Twitter, LinkedIn) that look for Open Graph (OG) tags in the `head` of your HTML document will find nothing.
