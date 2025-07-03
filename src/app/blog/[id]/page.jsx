@@ -132,14 +132,6 @@ export default async function BlogPostPage({ params }) {
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 rounded-md bg-brand-highlight-500 text-brand-primary-200 font-medium text-sm hover:bg-brand-highlight-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
           >
-            <svg
-              className="h-4 w-4 mr-2"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M14 10H12V8H14C15.66 8 17 6.66 17 5V3H14V5C14 5.55 13.55 6 13 6H11V18H14V10Z"></path>
-            </svg>
             Facebook
           </a>
           <a
@@ -154,14 +146,6 @@ export default async function BlogPostPage({ params }) {
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 rounded-md bg-brand-highlight-500 text-brand-primary-200 font-medium text-sm hover:bg-brand-highlight-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
           >
-            <svg
-              className="h-4 w-4 mr-2"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M20.447 20.452h-3.554v-7.859c0-1.747-0.661-2.935-2.185-2.935c-1.181 0-1.892 0.796-2.204 1.562c-0.115 0.274-0.158 0.655-0.158 1.037v7.855H9.278s0.02-9.186 0-10.157h3.554v1.503h0.048c0.468-0.785 1.294-1.611 3.414-1.611c2.316 0 4.044 1.524 4.044 4.73v7.84H20.447zM5.009 7.275c-1.442 0-2.348-0.916-2.348-2.091c0-1.176 0.906-2.092 2.348-2.092c1.443 0 2.349 0.916 2.349 2.092c0 1.175-0.906 2.091-2.349 2.091zM6.877 20.452H3.12V10.295h3.757V20.452z"></path>
-            </svg>
             LinkedIn
           </a>
         </div>
