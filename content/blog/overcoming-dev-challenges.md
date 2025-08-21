@@ -95,3 +95,5 @@ Web development isn’t just about code that runs. It’s about creating sites t
 - Knowing when “good enough” is better than perfect keeps projects moving.
 
 Every challenge was a chance to improve my skills and processes. The more problems I solved, the faster and more confident I became in tackling the next one.
+
+🚀 Looking for someone who solves tough problems fast? Check out [VibeIT](https://www.vibeit.hr/en), or [contact me](https://www.vibeit.hr/en/contact) directly.
