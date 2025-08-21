@@ -1,6 +1,7 @@
 ---
 title: Overcoming Real-World Coding Challenges in Web Development
 date: 2025-08-11
+image: https://res.cloudinary.com/doj6hcrgx/image/upload/v1755776217/projects/VibeIT%20Blog/Overcoming_real_world_coding_challenges_in_web_development_cover_dbecyq.png
 excerpt: A behind-the-scenes look at the biggest technical hurdles I’ve faced in building and optimizing my website, and how I solved them.
 author: Nikolina Požega
 authorBio: 'Nikolina is a passionate front-end developer and a technical writer with a focus on problem-solving and debugging. She loves sharing her knowledge with the community.'

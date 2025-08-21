@@ -75,6 +75,10 @@ export default async function BlogPostPage({ params }) {
         </p>
       )}
 
+      {/* Cover Image */}
+      {post.image && <img src={post.image} alt="Blog post cover image" />}
+      <br></br>
+
       {/* Excerpt */}
       {post.excerpt && (
         <p className="text-lg text-brand-primary-500 dark:text-brand-primary-400 mb-4 italic">
