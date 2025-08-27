@@ -34,7 +34,7 @@ export default async function BlogPostPage({ params }) {
     notFound();
   }
 
-  const blogPostUrl = `https://yourblog.com/blog/${post.id}`;
+  const blogPostUrl = `https://nikolina-dev-blog.vercel.app/blog/${post.id}`;
 
   return (
     <article className="container mx-auto px-4 py-8 max-w-3xl">
@@ -120,7 +120,7 @@ export default async function BlogPostPage({ params }) {
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
               post.title
             )}&url=${encodeURIComponent(
-              `https://yourblog.com/blog/${post.id}`
+              `https://nikolina-dev-blog.vercel.app/blog/${post.id}`
             )}`}
             target="_blank"
             rel="noopener noreferrer"
